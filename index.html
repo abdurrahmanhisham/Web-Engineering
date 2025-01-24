@@ -1,8 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Abdur Rahman</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abdur Rahman's CV">
+    <meta name="author" content="Abdur Rahman">
+    <title>CV - Abdur Rahman</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,8 +26,16 @@
             margin-right: 20px;
             border: 1px solid rgb(110, 79, 79); 
         }
+        .name {
+            font-size: 2em; 
+            font-weight: bold;
+            margin: 0;
+        }
+        .designation {
+            font-size: 1.2em;
+            margin: 0;
+        }
         .container {
-            
             display: flex;
             flex-direction: row;
             margin: 20px;
@@ -37,7 +49,13 @@
         }
         h1, h2, h3 {
             color: #333;
+            
         }
+        .table-caption {
+    color: #003cff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
         table {
             width: 100%;
             border-collapse: collapse;
@@ -67,46 +85,49 @@
             <img src="IMG_20221106_162057_404-removebg-preview (1).png" class="profile-pic">
             <div>
                 <h1>Abdur Rahman</h1> 
-                <h2>UI/UX Designer</h2>
-                <h2>Product Designer</h2>
+                <h3>UI/UX Designer</h3>
+                <h3>Product Designer</h3>
             </div>
         </div>
-
     </header>
 
     <main class="container">
         <div class="left">
             <section class="about-me">
-                <h2>About Me</h2>
+                <h1 style="background-color:#b4c9dd;">Hello World</h1>
+                <h3>About Me</h3>
                 <p>"I am Abdur Rahman, a professional UI/UX Designer with more than 3 years of experience creating mobile, web UI UX and tablet user interfaces, and experiences. I am passionate about leveraging my creativity and artistic ability to collaborate with the design eye-catching digital user interfaces. I have the expertise in knowing how to bring my designs to life with a great, intuitive and effective user experience."</p>
             </section>
-            <h3>Contact</h3>
-            <b>Sector 6, Road 11, House 13, Uttara, Dhaka, Bangladesh</b>
-            <p>Email: <a href="mailto:abdurrahmanhisham06@gmail.com">abdurrahmanhisham06@gmail.com</a></p> 
-            <p>Phone: <a href="tel:+8801785285714">01785285714</a></p> 
-
-            <section class="career-objective">
-                <h2>Career Objective</h2>
-                <p>Seeking a challenging position in UI/UX design to contribute my skills and creativity while growing professionally.</p>
+            <section class="contact">
+                <h3>Contact</h3>
+                <address>
+                    Sector 6, Road 11, House 13, Uttara, Dhaka, Bangladesh <br>
+                    Email: <a href="mailto:abdurrahmanhisham06@gmail.com">abdurrahmanhisham06@gmail.com</a><br>
+                    Phone: <a href="tel:+8801785285714">01785285714</a>
+                </address>
             </section>
 
+            <section class="career-objective">
+                <h1 style="background-color:#b4c9dd;">Career-Objective</h1>
+           
+                <p>Seeking a challenging position in UI/UX design to contribute my skills and creativity while growing professionally.</p>
+            </section>
+<!-- This is a comment -->
             <section class="skills">
-                <h2>Skills</h2>
+                <h1 style="background-color:#b4c9dd">Skills</h1>
+      
                 <ul> 
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>JavaScript</li>
                     <li>UI/UX Design</li>
                     <li>Expert in SaaS Design</li>
-                    <li>Management Skills</li>
-                    <li>Negotiation</li>
-                    <li>Critical Thinking</li>
                     <li>Leadership</li>
                 </ul>
             </section>
 
             <section class="languages">
-                <h2>Languages</h2>
+                <h3>Languages</h3>
                 <ul>
                     <li>Bangla</li>
                     <li>English</li>
@@ -115,7 +136,7 @@
             </section>
 
             <section class="tools">
-                <h2>Tools & Technologies</h2>
+                <h3>Tools & Technologies</h3>
                 <ul>
                     <li>Adobe XD</li>
                     <li>Sketch</li>
@@ -124,26 +145,51 @@
             </section>
 
             <section class="projects">
-                <h2>Projects</h2>
+                <h1 style="background-color:#b4c9dd;">Projects</h1>
+ 
                 <p>GitHub: <a href="https://github.com/abdurrahmanhisham" target="_blank">https://github.com/abdurrahmanhisham</a></p>
                 <p>Behance: <a href="https://www.behance.net/abdurrahmanhisham" target="_blank">https://www.behance.net/abdurrahmanhisham</a></p>
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/abdur-rahman-hisham/" target="_blank">https://www.linkedin.com/in/abdur-rahman-hisham/</a></p>
             </section>
 
             <section class="hobbies">
-                <h2>Hobbies</h2>
+                <h1 style="background-color:#b4c9dd;">Hobbies</h1>
+        
                 <ul>
                     <li>Watching Football</li>
                     <li>Traveling</li>
                     <li>Improving Skills</li>
                 </ul>
             </section>
+
+            <section class="contact-form">
+                <h1 style="background-color:#b4c9dd;">Contact Form</h1>
+          
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email"><br>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message"></textarea><br>
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+                <button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+            </section>
         </div>
 
         <div class="right">
             <section class="education">
-                <h2>Education</h2>
+                <h1 style="background-color:#b4c9dd;">Education</h1>
                 <table>
+                    <caption class="table-caption">Educational Background</caption>
                     <thead>
                         <tr>
                             <th>Degree</th>
@@ -172,22 +218,22 @@
             </section>
 
             <section class="experience">
-                <h2>Experience</h2>
-                <p><b>UI/UX Designer</b></p>
+                <h1 style="background-color:#b4c9dd;">Experience</h1>
+                <p><strong>UI/UX Designer</strong></p>
                 <p>Programming Hero (2023-2024)</p>
-                <p>"I've been working the last 1.5 years with Programming Hero as a mid-level user interface designer."</p>
 
-                <p><b>Junior UI/UX Designer</b></p>
+
+                <p><strong>Junior UI/UX Designer</strong></p>
                 <p>Captive Fountain (2022-2023)</p>
-                <p>"I've been working 6 months with Captive Fountain as a junior user interface designer."</p>
 
-                <p><b>Teaching</b></p>
+
+                <p><strong>Teaching</strong></p>
                 <p>Udvash Engineering (2021-2022)</p>
-                <p>"During my early university life, I was a part-time teacher at Udvash Engineering Shikkha Poribar."</p>
+
             </section>
 
             <section class="certifications">
-                <h2>Certifications</h2>
+                <h1 style="background-color:#b4c9dd;">Certifications</h1>
                 <ul>
                     <li>Math Olympiad Finalist</li>
                     <li>Street Children Empowerment Foundation Certificate</li>
@@ -198,48 +244,59 @@
             </section>
 
             <section class="extras">
-                <h2>Extra Achievements</h2>
+                <h1 style="background-color:#b4c9dd;">Extra Achievements</h1>
                 <ul>
                     <li>Part-time teacher at Udvash Engineering</li>
                     <li>Runner-up, College Debate Competition</li>
                     <li>Champion at Artistic Design Competition</li>
                 </ul>
-
-                <h2>References</h2>
-                <dl> 
-                    <h4>Nasir Uddin</h4>
-                    <dd>CEO at Nurency Academy</dd>
-                    <dd>Phone: 0178******882</dd>
-                    <dd>Email: hello@nurency.com</dd>
-
-                    <h4>Jhankar Mahbub</h4>
-                    <dd>CEO at Programming Hero</dd>
-                    <dd>Phone: *******572</dd>
-                    <dd>Email: jhankar.mahbub@gmail.com</dd>
-                </dl>
             </section>
-        </div>
-    </main>
 
-
-    <section class="multimedia">
-        <h2>Portfolio Section (Multimedia)</h2>
-        <p>Below are some sample multimedia elements to showcase:</p>
-        <div class="multimedia-elements">
-            <video controls>
-                <source src="https://videos.pexels.com/video-files/1918465/1918465-sd_640_360_24fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <audio controls>
-                <source src="f:\WE LAB\vlog-music-beat-trailer-showreel-promo-background-intro-theme-274290.mp3" type="audio/mpeg">
-                Your browser does not support the audio tag.
-            </audio>
-            <iframe src="https://elearn.daffodilvarsity.edu.bd/my/" title="BLC"></iframe>
-        </div>
-    </section>
+            <section class="references">
+                <h1 style="background-color:#b4c9dd;">References</h1>
+                <dl> 
+                    <dt>Nasir Uddin</dt>
+                    <dd>CEO at Nurency Academy</dd>
+                   <dd>CEO at Nurency Academy</dd>
+                        <dd>Phone: 0178******882</dd>
+                        <dd>Email: hello@nurency.com</dd>
     
-    <footer>
-        <p>&copy; 2025 Abdur Rahman. All rights reserved.</p>
-    </footer>
+                        <dt>Jhankar Mahbub</dt>
+                        <dd>CEO at Programming Hero</dd>
+                        <dd>Phone: *******572</dd>
+                        <dd>Email: jhankar.mahbub@gmail.com</dd>
+                    </dl>
+                </section>
+            </div>
+            
+        </main>
+    
+        <section class="multimedia">
+            <h1 style="background-color:#b4c9dd;">Portfolio Section(Multimedia)</h1>
+            <p>Below are some sample multimedia elements to showcase:</p>
+            <code>
+                x = 5;
+                y = 6;
+                z = x + y;
+                </code>
+                <p>I will display &#x20AC;</p>
+                <p>&#128512;</p>
+            <div class="multimedia-elements">
+                <video controls>
+                    <source src="https://videos.pexels.com/video-files/1918465/1918465-sd_640_360_24fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio controls>
+                    <source src="f:\WE LAB\vlog-music-beat-trailer-showreel-promo-background-intro-theme-274290.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+                <iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"></iframe>
+            </div>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Abdur Rahman. All rights reserved.</p>
+        </footer>
     </body>
     </html>
+    
